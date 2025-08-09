@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Revilyn S.</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/RS LOGO-03.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Style
+  * Template URL: https://bootstrapmade.com/style-bootstrap-portfolio-template/
+  * Updated: Jul 02 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+         <img src="assets/img/RS LOGO-02.webp" alt=""> 
+        <!-- Uncomment the line below if you also wish to use an text logo -->
+        <h1 class="sitename">Revilyn S.</h1> 
+      </a>
+
+      <div id="nav-placeholder"></div>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          fetch("navmenu.html")
+            .then(res => res.text())
+            .then(data => {
+              document.getElementById("nav-placeholder").innerHTML = data;
+
+              const toggle = document.querySelector(".mobile-nav-toggle");
+              const nav = document.querySelector("#navmenu");
+
+              function openMenu() {
+                document.body.classList.add("mobile-nav-active");
+                nav.classList.add("open");
+              }
+
+              function closeMenu() {
+                document.body.classList.remove("mobile-nav-active");
+                nav.classList.remove("open");
+              }
+
+              // Toggle menu on click
+              toggle.addEventListener("click", function (e) {
+                e.stopPropagation(); // Prevent immediate closing
+                document.body.classList.toggle("mobile-nav-active");
+                nav.classList.toggle("open");
+              });
+
+              // Auto-close on click outside
+              document.addEventListener("click", function (e) {
+                if (
+                  !nav.contains(e.target) &&
+                  !toggle.contains(e.target)
+                ) {
+                  closeMenu();
+                }
+              });
+            });
+        });
+      </script>
+
+
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container">
+        <div class="row g-0 align-items-center">
+
+          <div class="col-lg-6 hero-content" data-aos="fade-right" data-aos-delay="100">
+            <div class="content-wrapper">
+              <h1 class="hero-title"><span class="typed" data-typed-items="Graphic Designer, Video Editor, Virtual Assistant, Creative Artist"></span></h1>
+              <p class="lead">I am an entry-level creative skilled in graphic design, digital illustration, virtual assistance, video editing, basic photo editing and UI/UX design. I am about creating engaging visual and user-friendly experience while continuously learning and growing in the creative field.</p>
+
+              <!-- <div class="hero-stats" data-aos="fade-up" data-aos-delay="200">
+                <div class="stat-item">
+                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="2">0</span>
+                  <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-item">
+                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="2">0</span>
+                  <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="98" data-purecounter-duration="2">0</span>
+                  <span class="stat-label">Happy Clients</span>
+                </div>
+              </div> -->
+
+              <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+                <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+              </div>
+
+              <div class="social-links" data-aos="fade-up" data-aos-delay="400">
+                <a href="https://www.facebook.com/revilynjoy/" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/_rrebelenn/" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/rsalasiban/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 hero-image" data-aos="fade-left" data-aos-delay="200">
+            <div class="image-container">
+              <div class="floating-elements">
+                <div class="floating-card card-1" data-aos="zoom-in" data-aos-delay="300">
+                  <i class="bi bi-palette"></i>
+                  <span>Graphic Design</span>
+                </div>
+                <div class="floating-card card-2" data-aos="zoom-in" data-aos-delay="400">
+                  <i class="bi bi-ui-radios-grid"></i>
+                  <span>UI/UX Design</span>
+                </div>
+                <div class="floating-card card-3" data-aos="zoom-in" data-aos-delay="500">
+                  <i class="bi bi-lightning"></i>
+                  <span>Creative Ideas</span>
+                </div>
+              </div>
+              <img src="assets/img/profile/profile-square-2.webp" alt="Portfolio Hero" class="img-fluid hero-main-image">
+              <div class="image-overlay"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>About</h2>
+        <p>A brief overview of my skills, experience, and interests.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+
+          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+            <div class="profile-image-wrapper">
+              <div class="profile-image">
+                <img src="assets/img/profile/profile-square-2.webp" alt="Profile" class="img-fluid">
+              </div>
+              <div class="signature-section">
+                <p class="quote">Integrating design with technology to develop clear and effective visuals.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-content">
+              <div class="intro">
+                <h2 style="font-size: 35px; ">Mabuhay! I'm Revilyn - a Creative Designer</h2>
+                <p>As an Information Technology fresh graduate with passion for design and digital media, I aim to bring ideas to life through clean, effective, and user-centered outputs. Whether for publication material, prototypes, or simple video editing, each project must be clear in message, creative in visual, and attracts users.</p>
+              </div>
+
+              <div class="skills-grid">
+                <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="skill-icon">
+                    <i class="bi bi-palette"></i>
+                  </div>
+                  <h4>Graphic Design</h4>
+                  <p>Bringing concepts to life through creative visuals and layouts</p>
+                </div>
+                <div class="skill-item" data-aos="zoom-in" data-aos-delay="450">
+                  <div class="skill-icon">
+                    <i class="bi bi-camera-reels"></i>
+                  </div>
+                  <h4>Video Editing</h4>
+                  <p>Transforming raw clips into meaningful stories and content</p>
+                </div>
+                <div class="skill-item" data-aos="zoom-in" data-aos-delay="500">
+                  <div class="skill-icon">
+                    <i class="bi bi-ui-radios-grid"></i>
+                  </div>
+                  <h4>UI/UX Design</h4>
+                  <p>Designing simple and engaging interfaces with user experience in mind</p>
+                </div>
+              </div>
+
+              <div class="journey-timeline" data-aos="fade-up" data-aos-delay="300">
+                <div class="timeline-item">
+                  <div class="year">2025</div>
+                  <div class="description">Graduated with a degree in Information Technology from Pamantasan ng Cabuyao</div>
+                </div>
+                <div class="timeline-item">
+                  <div class="year">2025</div>
+                  <div class="description">Complete internship as Multimedia Artist at Bytescrafter IT Solution</div>
+                </div>
+                <div class="timeline-item">
+                  <div class="year">2019</div>
+                  <div class="description">Worked as Virtual Assistant at CodeZpace Web Development Services</div>
+                </div>
+              </div>
+
+              <div class="cta-section" data-aos="fade-up" data-aos-delay="400">
+                <div class="fun-fact">
+                  <span class="emoji">🎨</span>
+                  <span class="text">Creative and matcha-fueld designer from Philippines</span>
+                  <span class="emoji">🍵</span>
+                </div>
+                <div class="action-buttons">
+                  <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                  <a href="assets/document/REVILYN JOY R. SALASIBAN (RESUME).pdf" class="btn btn-outline">Download Resume</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="skills-grid">
+              <div class="row g-4">
+                
+                <div class="col-md-6" data-aos="flip-left" data-aos-delay="400">
+                  <div class="skill-card">
+                    <div class="skill-header">
+                      <i class="bi bi-palette"></i>
+                      <h3>Design &amp; Tools</h3>
+                    </div>
+                    <div class="skills-animation">
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Figma</span>
+                          <span class="skill-percentage">30%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Photoshop</span>
+                          <span class="skill-percentage">40%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Illustrator</span>
+                          <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Canva</span>
+                          <span class="skill-percentage">92%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End Design Card -->
+                </div>
+
+                <div class="col-md-6" data-aos="flip-left" data-aos-delay="300">
+                  <div class="skill-card">
+                    <div class="skill-header">
+                      <i class="bi bi-film"></i>
+                      <h3>Video Editing Tools</h3>
+                    </div>
+                    <div class="skills-animation">
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Premiere Pro</span>
+                          <span class="skill-percentage">65%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Sony Vegas Pro</span>
+                          <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">CapCut PC</span>
+                          <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End Backend Card -->
+                </div>
+
+                <div class="col-md-6" data-aos="flip-left" data-aos-delay="500">
+                  <div class="skill-card">
+                    <div class="skill-header">
+                      <i class="bi bi-globe"></i>
+                      <h3>Web Development</h3>
+                    </div>
+                    <div class="skills-animation">
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">HTML/CSS</span>
+                          <span class="skill-percentage">30%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">JavaScript</span>
+                          <span class="skill-percentage">10%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Bootstrap</span>
+                          <span class="skill-percentage">15%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">MySQL</span>
+                          <span class="skill-percentage">15%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">WordPress</span>
+                          <span class="skill-percentage">20%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End DevOps Card -->
+                </div>
+
+                <div class="col-md-6" data-aos="flip-left" data-aos-delay="200">
+                  <div class="skill-card">
+                    <div class="skill-header">
+                      <i class="bi bi-code-slash"></i>
+                      <h3>Productivity Tools</h3>
+                    </div>
+                    <div class="skills-animation">
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Microsoft Office (Excel, Word, PPT)</span>
+                          <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Google Workspace (Spreadsheet, Docs, Forms)</span>
+                          <span class="skill-percentage">88%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Asana</span>
+                          <span class="skill-percentage">50%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Notion</span>
+                          <span class="skill-percentage">62%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Zoom</span>
+                          <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div><!-- End Frontend Card -->
+                </div>
+                
+              </div>
+            </div><!-- End Skills Grid -->
+          </div>
+
+          <div class="col-lg-4">
+            <div class="skills-summary" data-aos="fade-left" data-aos-delay="200">
+              <h3>Creative Growth</h3>
+              <p>Growing through experiences and opportunities. I've develop creativity in different aspects. Each role has shaped me for what I am.</p>
+
+              <div class="skills-badges" data-aos="fade-up" data-aos-delay="600" style="border-bottom: 1px solid color-mix(in srgb, var(--heading-color) 30%, transparent); padding-bottom: 1.5rem; margin-bottom: 1.5rem;">
+                <h4>Certificates</h4>
+                <div class="badge-list">
+                  <a href="assets/img/certificates/Salasiban - Google Analytics.webp" 
+                      class="skill-badge glightbox">
+                      Google Analytics
+                  </a>
+
+                  <a href="assets/img/certificates/Salasiban - Canva Essentials.webp"
+                      class="skill-badge glightbox">
+                      Canva Essentials
+                  </a>
+
+                  <a href="assets/img/certificates/Salasiban - Canva for Work Certification.webp"
+                      class="skill-badge glightbox">
+                      Canva for Work
+                    </a>
+
+                  <a href="assets/img/certificates/Salasiban - Graphic Design Essentials.webp" 
+                      class="skill-badge glightbox">
+                      Graphic Design Essentials
+                  </a>
+
+                  <a href="assets/img/certificates/Salasiban Revilyn Joy_EF SET Certificate.webp" 
+                      class="skill-badge glightbox">
+                      EF SET English - C1 Advanced
+                  </a>
+                </div>
+              </div>
+
+              <div class="skills-badges" data-aos="fade-up" data-aos-delay="600">
+                <h4>Trainings, Workshops & Seminars</h4>
+                <div class="badge-list">
+                  <a href="assets/img/certificates/Salasiban - Wordpress Advanced.webp" 
+                      class="skill-badge glightbox">WordPress Advanced</a>
+                  <a href="assets/img/certificates/Salasiban - Adobe Illustrator 101.webp" 
+                      class="skill-badge glightbox">Adobe Illustrator 101</a>
+                  <a 
+                      class="skill-badge glightbox">UI/UX Mastery Workshop</a>
+                  <a href="assets/img/certificates/Salasiban-Sining ng Teknolohiya.webp"
+                      class="skill-badge glightbox">Sining ng Teknolohiya</a>
+                  <a href="assets/img/certificates/Salasiban - Creative Web Design - TESDA.webp" 
+                      class="skill-badge glightbox">Creative Web Design</a>
+                </div>
+              </div>
+
+            </div><!-- End Skills Summary -->
+          </div>
+        </div>
+
+      </div>
+
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Resume</h2>
+        <p>An overview of qualifications, work experience, and education in the tech field.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="experience-section">
+              <div class="section-header">
+                <h2><i class="bi bi-briefcase"></i> Professional Journey</h2>
+                <p class="section-subtitle">A summary of roles and responsibilities held over the years in the technology industry.</p>
+              </div>
+
+              <div class="experience-cards">
+                <div class="experience-card" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="card-header">
+                    <div class="role-info">
+                      <h3>Virtual Assistant</h3>
+                      <h4>Codezpace Web Development Services</h4>
+                    </div>
+                    <span class="duration">2019 - 2021</span>
+                  </div>
+                  <div class="card-body">
+                    <ul class="achievements">
+                      <li>Handled admin tasks, scheduling, and online coordination</li>
+                      <li>Supported site updates and basic development tasks</li>
+                      <li>Created graphics and organized presentations</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="experience-card" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="card-header">
+                    <div class="role-info">
+                      <h3>Multimedia Artist (Internship)</h3>
+                      <h4>BytesCrafter Software Development Services and IT Solutions</h4>
+                    </div>
+                    <span class="duration">2025</span>
+                  </div>
+                  <div class="card-body">
+                    <ul class="achievements">
+                      <li>Designed graphics and web mockups using Figma and Canva</li>
+                      <li>Assisted in developing responsive web pages with HTML/CSS</li>
+                      <li>Edited videos and animations for digital content and branding</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="experience-card" data-aos="zoom-in" data-aos-delay="500">
+                  <div class="card-header">
+                    <div class="role-info">
+                      <h3>Creative Media Ministry Member</h3>
+                      <h4>Jesus Rock and Refuge Christian Community Inc.</h4>
+                    </div>
+                    <span class="duration">2019 - Present</span>
+                  </div>
+                  <div class="card-body">
+                    <ul class="achievements">
+                      <li>Designed publication materials, posters, and event backdrops.</li>
+                      <li>Assisted in event stage design planning and setup.</li>
+                      <li>Edited videos for teasers and post-event highlights.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+            <div class="education-section">
+              <div class="section-header">
+                <h2><i class="bi bi-mortarboard"></i> Academic Excellence</h2>
+                <p class="section-subtitle">An outline of educational background and certifications related to technology and innovation.</p>
+              </div>
+
+              <div class="education-timeline">
+                <div class="timeline-track"></div>
+
+                <div class="education-item" data-aos="slide-up" data-aos-delay="300">
+                  <div class="timeline-marker"></div>
+                  <div class="education-content">
+                    <div class="degree-header">
+                      <h3>STEM CS/IT </h3>
+                      <span class="year">2019 - 2021</span>
+                    </div>
+                    <h4 class="institution">Cabuyao Institute of Technology</h4>
+                    <p>Took STEM strand with a focus on Computer Science and Information Technology. Explored basic programming, digitial tools, and technology concepts.</p>
+                  </div>
+                </div>
+
+                <div class="education-item" data-aos="slide-up" data-aos-delay="400">
+                  <div class="timeline-marker"></div>
+                  <div class="education-content">
+                    <div class="degree-header">
+                      <h3>Bachelor of Science in Information Technology</h3>
+                      <span class="year">2021 - 2025</span>
+                    </div>
+                    <h4 class="institution">Pamantasan Ng Cabuyao</h4>
+                    <p>Took Information Technology and honed interest in design, multimedia, and digital solutions. Developed practical skills through case studies and activities involving web design, graphic design, and collaboration with blockmates on presentations</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Portfolio</h2>
+        <p>A showcase of creative projects and professional work in design, multimedia, and web development.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+            <li data-filter="*" class="filter-active">
+              <i class="bi bi-grid-3x3"></i> All Projects
+            </li>
+            <li data-filter=".filter-brand">
+              Brand Identity
+            </li>
+            <li data-filter=".filter-social">
+              Social Media
+            </li>
+            <li data-filter=".filter-merch">
+              Merch & Printables
+            </li>
+            <li data-filter=".filter-posters">
+              Posters
+            </li>
+            <li data-filter=".filter-illustrate">
+              Digital Illustration
+            </li>
+            <li data-filter=".filter-video">
+              Video Editing
+            </li>
+            <li data-filter=".filter-illustrate">
+              Web Design
+            </li>
+          </ul>
+
+          <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300" style="margin-left: 150px; margin-right: 150px;">
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-posters">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/Posters/worshipseminar/Worship Seminar (1).png" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Events</div>
+                      <h3 class="entry-title">Worship Seminar</h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/Posters/worshipseminar/Worship Seminar (1).png" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Worship Seminar; ">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                        <a href="pf_post_worship.html">
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-posters">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/Posters/masterpiece/God's Masterpiece (1).png" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Events</div>
+                      <h3 class="entry-title">God's Masterpiece</h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/Posters/masterpiece/God's Masterpiece (1).png" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: God's Masterpiece; ">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                        <a href="pf_post_masterpiece.html">
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-posters filter-social">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/Social/quantum/Quantum Computing (1).png" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Social Media</div>
+                      <h3 class="entry-title">Quantum Computing</h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/Social/quantum/Quantum Computing (1).png" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Quantum Computing; ">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                        <a href="pf_socm_quantum.html">
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+            
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-posters filter-social">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/Social/calmchaos/Calm in Chaos (1).png" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Social Media</div>
+                      <h3 class="entry-title">Calm in the Chaos</h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/Social/calmchaos/Calm in Chaos (1).png" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Calm in the Chaos; ">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                        <a href="pf_socm_calm.html">
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-social">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/Social/tipstricks/Tips and Tricks (1).png" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Social Media</div>
+                      <h3 class="entry-title">Tips and Tricks</h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/Social/tipstricks/Tips and Tricks (1).png" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Tips and Tricks; ">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                        <a href="pf_socm_tips.html">
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-merch">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/Printables/Growing with Jesus (3).png" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Printables</div>
+                      <h3 class="entry-title">Growing with Jesus</h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/Printables/Growing with Jesus (3).png" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Growing with Jesus Invitation; ">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                        <a href="pf_print_gwj.html">
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+            
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-posters">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/Posters/closer/Closer with Christ (1).png" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Events</div>
+                      <h3 class="entry-title">Closer with Christ</h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/Posters/closer/Closer with Christ (1).png" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Growing with Jesus Invitation; ">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                        <a href="pf_post_closer.html">
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-posters">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/Posters/approval/Approval (1).png" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Events</div>
+                      <h3 class="entry-title">Approval 2025</h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/Posters/approval/Approval (1).png" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Growing with Jesus Invitation; ">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                        <a href="pf_post_approval.html">
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-brand">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/brand/project/Project Revi (4).png" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Mockup Branding</div>
+                      <h3 class="entry-title">Project Revi</h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/brand/project/Project Revi (4).png" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Growing with Jesus Invitation; ">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                        <a href="pf_brand_project.html">
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->    
+            
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-brand">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/brand/vickytchen/vickytchen (3).png" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Mockup Branding</div>
+                      <h3 class="entry-title">Vickytchen</h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/brand/vickytchen/vickytchen (3).png" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Growing with Jesus Invitation; ">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                        <a href="pf_brand_vickytchen.html">
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->                
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-merch">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/Merch/Linya Clothing/Bible Series (1).png" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Clothing Merch</div>
+                      <h3 class="entry-title">Linya Clothing | Bible Series</h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/Merch/Linya Clothing/Bible Series (1).png" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Growing with Jesus Invitation; ">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                        <a href="pf_merch_linyabs.html">
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->        
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-merch">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/Merch/Linya Clothing/Food Series (1).png" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Clothing Merch</div>
+                      <h3 class="entry-title">Linya Clothing | Food Series</h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/Merch/Linya Clothing/Food Series (1).png" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Growing with Jesus Invitation; ">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                        <a href="pf_merch_linyafs.html">
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->        
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-merch">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/Merch/Linya Clothing/Grateful Series (1).png" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Clothing Merch</div>
+                      <h3 class="entry-title">Linya Clothing | Grateful Series</h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/Merch/Linya Clothing/Grateful Series (1).png" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Growing with Jesus Invitation; ">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                        <a href="pf_merch_linyags.html">
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->     
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-posters">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <!-- Video preview via iframe -->
+                  <iframe width="100%" height="200" src="https://youtu.be/G5QgpUsEyno?si=_16N58Coh9JYE6-w" 
+                    title="Worship Seminar" frameborder="0" allowfullscreen loading="lazy"></iframe>
+                  
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Events</div>
+                      <h3 class="entry-title">Worship Seminar</h3>
+                      <div class="entry-links">
+                        <a href="https://youtu.be/G5QgpUsEyno?si=_16N58Coh9JYE6-w" class="glightbox" data-type="video" data-gallery="portfolio-gallery-ui">
+                          <i class="bi bi-play-btn"></i>
+                        </a>
+                        <a href="pf_post_worship.html">
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div>
+
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Contact</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="content">
+                  <h4>Location</h4>
+                  <p>Cabuyao, Laguna, Philippines </p>
+                </div>
+              </div>
+
+              <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box">
+                  <i class="bi bi-telephone"></i>
+                </div>
+                <div class="content">
+                  <h4>Phone Number</h4>
+                  <p>(+63)992 514 6479</p>
+                </div>
+              </div>
+
+              <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="content">
+                  <h4>Email Address</h4>
+                  <p>salasibanrevilynjoy32@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <!-- index.html -->
+<div id="footer-placeholder"></div>
+
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    });
+</script>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
