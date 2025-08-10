@@ -2096,6 +2096,28 @@ section,
   }
 }
 
+/* Reduce padding/margin for mobile so thumbnails look bigger */
+@media (max-width: 576px) {
+  .portfolio .row {
+    margin-left: -5px !important;
+    margin-right: -5px !important;
+  }
+
+  .portfolio .row .portfolio-item {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+
+  .portfolio .portfolio-entry {
+    border-radius: 10px;
+  }
+
+  .portfolio .portfolio-entry .entry-image {
+    aspect-ratio: 4/3; /* or 16/9 if you prefer wider */
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
@@ -2491,12 +2513,13 @@ section,
   background-color: color-mix(in srgb, var(--surface-color), transparent 70%);
 } */
 
-.contact .info-item .content h4 {
-  color: var(--default-color);
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-  font-weight: 700;
+.contact .info-item .content p {
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+  word-break: break-word; /* Allow breaking inside words */
+  overflow-wrap: anywhere; /* Ensures long strings wrap */
 }
+
 
 .contact .info-item .content p {
   margin-bottom: 0.25rem;
@@ -2510,8 +2533,18 @@ section,
 @media (max-width: 768px) {
   .contact .info-item {
     flex: 1 1 100%;
+    padding: 1.25rem; /* smaller padding */
   }
 }
+
+@media (max-width: 480px) {
+  .contact .info-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}
+
 
 
 /*--------------------------------------------------------------
@@ -3259,3 +3292,17 @@ GLightbox Final Minimal Dark Setup
 }
 
 
+#no-projects {
+  display: none;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  padding: 15px 25px;
+  font-size: 1rem;
+  font-style: italic;
+  margin: 30px auto;
+  max-width: 350px;
+  color: #555;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: opacity 0.3s ease;
+}
