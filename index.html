@@ -41,7 +41,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
-      <a href="/" class="logo d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
          <img src="assets/img/RS LOGO-02.webp" alt=""> 
         <!-- Uncomment the line below if you also wish to use an text logo -->
@@ -1095,54 +1095,6 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
-  
-<script>
-  const routes = {
-    '/': 'index.html'
-  };
-
-  async function loadContent(path) {
-    const page = routes[path] || '404.html';
-    try {
-      const res = await fetch(page);
-      if (!res.ok) throw new Error('Not found');
-      const html = await res.text();
-
-      // Optional: extract only the content inside <main> to avoid nesting full html pages
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(html, 'text/html');
-      const mainContent = doc.querySelector('main') || doc.body;
-      document.getElementById('content').innerHTML = mainContent.innerHTML;
-    } catch {
-      document.getElementById('content').innerHTML = '<h2>Page not found</h2>';
-    }
-  }
-
-  function navigate(path, addToHistory = true) {
-    loadContent(path);
-    if (addToHistory) {
-      history.pushState(null, null, path);
-    }
-  }
-
-  // Handle nav link clicks
-  document.querySelectorAll('a.nav-link').forEach(link => {
-    link.addEventListener('click', e => {
-      e.preventDefault();
-      const path = new URL(e.target.href).pathname;
-      navigate(path);
-    });
-  });
-
-  // Handle back/forward buttons
-  window.addEventListener('popstate', () => {
-    loadContent(location.pathname);
-  });
-
-  // Load initial content based on URL
-  loadContent(location.pathname);
-</script>
 
 </body>
 
