@@ -41,7 +41,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="/" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
          <img src="assets/img/RS LOGO-02.webp" alt=""> 
         <!-- Uncomment the line below if you also wish to use an text logo -->
@@ -124,8 +124,8 @@
               </div> -->
 
               <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
-                <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                <a href="#" onclick="document.getElementById('portfolio').scrollIntoView({behavior: 'smooth'}); history.pushState(null, '', '/portfolio'); return false;" class="btn btn-primary">View My Work</a>
+                <a href="#" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); history.pushState(null, '', '/contact'); return false;" class="btn btn-outline">Get In Touch</a>
               </div>
 
               <div class="social-links" data-aos="fade-up" data-aos-delay="400">
@@ -239,7 +239,7 @@
                   <span class="emoji">🍵</span>
                 </div>
                 <div class="action-buttons">
-                  <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                  <a href="#" onclick="document.getElementById('portfolio').scrollIntoView({behavior: 'smooth'}); history.pushState(null, '', '/portfolio'); return false;" class="btn btn-primary">View My Work</a>
                   <a href="assets/document/REVILYN JOY R. SALASIBAN (RESUME).pdf" class="btn btn-outline">Download Resume</a>
                 </div>
               </div>
@@ -1099,9 +1099,7 @@
   
 <script>
   const routes = {
-    '/': 'index.html',
-    '/portfolio': 'portfolio-details.html',
-    '/about': 'about.html'
+    '/': 'index.html'
   };
 
   async function loadContent(path) {

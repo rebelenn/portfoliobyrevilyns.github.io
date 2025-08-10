@@ -46,10 +46,10 @@
 
         <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'}); history.pushState(null, '', '/about'); return false;">About</a></li>
+          <li><a href="#" onclick="document.getElementById('resume').scrollIntoView({behavior: 'smooth'}); history.pushState(null, '', '/resume'); return false;">Resume</a></li>
+          <li><a href="#" onclick="document.getElementById('portfolio').scrollIntoView({behavior: 'smooth'}); history.pushState(null, '', '/portfolio'); return false;">Portfolio</a></li>
+          <li><a href="#" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); history.pushState(null, '', '/contact'); return false;">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
     </nav>
