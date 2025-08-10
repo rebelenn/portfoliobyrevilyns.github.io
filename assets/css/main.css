@@ -184,6 +184,8 @@ h6 {
 .header .logo img {
   max-height: 32px;
   margin-right: 8px;
+  opacity: 1;
+  transition: opacity 0.5s ease;
 }
 
 .header .logo h1 {
@@ -192,6 +194,36 @@ h6 {
   font-weight: 700;
   color: var(--heading-color);
 }
+
+/* On scroll: background fades dark → transparent */
+.header.scrolled {
+  --background-color: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.85) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background: var(--background-color);
+}
+
+/* Logo fades slightly when scrolling */
+.header.scrolled .logo img {
+  opacity: 0.4;
+}
+
+/* Sitename visible at the top */
+.header .sitename {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Sitename fades out completely when scrolled */
+.header.scrolled .sitename {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
